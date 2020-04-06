@@ -164,7 +164,7 @@ void structDump() {
 						std::stringstream stars;
 						stars.str("");
 						if(var.second.find('*')!= std::string::npos){
-							for(auto i = var.second.find_first_of('*'); i < var.second.find_last_of('*')  ; i++){
+							for(auto i = var.second.find_first_of('*'); i <= var.second.find_last_of('*')  ; i++){
 								stars<<"*";	
 							}
 						}
@@ -173,7 +173,7 @@ void structDump() {
                           std::to_string(scopes[label.first].locs[var.first])]<<" "
                << stars.str()<<"* " << var.first << ";\n";
           } else {
-            ss << var.second.substr(0, var.second.find('[')) << " * "
+            ss << var.second.substr(0, var.second.find('[')) << "* "
                << var.first << ";\n";
           }
         } else {
@@ -194,7 +194,7 @@ void structDump() {
 						std::stringstream stars;
 						stars.str("");
 						if(var.second.find('*')!= std::string::npos){
-							for(auto i = var.second.find_first_of('*'); i < var.second.find_last_of('*')  ; i++){
+							for(auto i = var.second.find_first_of('*'); i <= var.second.find_last_of('*')  ; i++){
 								stars<<"*";	
 							}
 						}
@@ -203,7 +203,7 @@ void structDump() {
                           std::to_string(scopes[label.first].locs[var.first])]<<" "
                << stars.str()<<"* " << var.first << ";\n";
           } else {
-            ss << var.second << " * " << var.first << ";\n";
+            ss << var.second << "* " << var.first << ";\n";
           }
         }
       }
