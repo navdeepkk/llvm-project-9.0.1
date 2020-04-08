@@ -1,5 +1,7 @@
 //------------------------------------------//
-// This test case show a case of Indirect   //
+// This test case demostrates the ability of//
+// code to handel recursively nested blocks.//
+// This test case shows a case of Indirect  //
 // recursion between functions at arbitrary //
 // depths. The innermost function can call  //
 // any of the functions that are in its     //

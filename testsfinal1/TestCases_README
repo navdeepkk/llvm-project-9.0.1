@@ -1,0 +1,58 @@
+
+1. First test should be the code that was sent along with the assignment. => Yes 
+=> test1.c
+
+2. In addition, does your implementation handle recursively nested function blocks? => Yes. 
+=> test2.c
+
+3. Does your asst handle structs that are locally defined (i.e. defined inside the function)? 
+=> Yes. Along with that structure renaming is also done to handle cases when same name structures are declared in two different functions or nested functions.
+=> test3.c
+
+4. If I have a local captured variable (i.e. the var is defined inside the function and used inside the closure) and a global var with same name, will your code still work? Yes.
+=> test4.c
+
+5. Do you pass all the variables to every closure or only the captured vars? ==> Only the captured variables. 
+
+6. Can you handle multiple closures in same/different functions (not necessarily nested)? => Yes.
+=>test5.c
+
+7. Do you explicitly pass global vars to the closure as well? Note that you don't need that. => No, only captured variables are passed.
+
+8. In addition, if your implementation has any extra features, please  mention these and add tests for them.
+
+9. a. Handling of multidimensional arrays. 
+   b. array as index of array  e.g. arr[b[i]][b[j]] = 8
+   c. expressions as index of array e.g a[i + 2j][i*j] = 4
+=> test6.c
+
+10. Combination of structure and arrays
+Case 1: variable as 3D-array of structure 
+Case 2: variable of structure with 3D-array as a member
+Case 3: array of structure having 2D-array as member
+=> test7.c
+
+11. Pointer Test 1 : Linked List Insertion and Traversal
+=> test8.c
+
+12. Pointer Test 2 : Initializing double pointer as 2D array and printing.
+=> test9.c
+
+13. Passing captured variables as argument to function calls as value and as address. 
+=> test10.c
+
+14. Function Renaming
+   a. Call expression resolution to appropriate function definition, when nested function has same name as 
+   global function or other nested function.
+   b. Appropriate call resolution based on static scope.
+=> test11.c
+
+15. Recursion example: 
+    a. Factorial calculation => test12.c 
+    b. Indirect Recursion => test13.c
+    c. Merge Sort => test14.c
+
+All the test case implicitly tests if hoisting of labels is done properly, as well as if variables are captured correctly.
+
+   
+

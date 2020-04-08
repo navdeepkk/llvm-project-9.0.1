@@ -22,8 +22,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct node{
-	struct node* next;
+struct node{																	//strucuture declared as global jus beacuse malloc need the type as struct node.
+	struct node* next;													//if it was inside then the tool would not rename the argument is malloc and code would break.
 	int elem;
 };
 
